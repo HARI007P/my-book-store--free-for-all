@@ -11,9 +11,9 @@ function Freebook() {
   var settings = {
     dots: true,
     infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    speed: 100,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
@@ -45,11 +45,12 @@ function Freebook() {
   const filterData = list.filter((data) =>data.category === "Sale");
   return (
     <>
-    <div className='max-w-screen-2xl container mx-auto md:px-20 '>
+    <div className='max-w-screen-2xl  container mx-auto md:px-20 '>
       <div>
-        <h1 className='font-bold text-xl pb-2'>Rs 1 Books</h1>
-        <p>Explore worlds unknown, unravel mysteries, and broaden your horizons, all at no cost. Dive into the endless possibilities awaiting within the pages of our carefully curated free books collection.</p>
+        <h1 className='font-bold text-pink-500 text-2xl pb-2'>Rs 1 Books</h1>
+        <p className="text-xl">Explore worlds unknown, unravel mysteries, and broaden your horizons, all at no cost. Dive into the endless possibilities awaiting within the pages of our carefully curated free books collection.</p>
       </div>
+      <br></br>
     <div>
     <Slider {...settings}>
       {filterData.map((item) =>(

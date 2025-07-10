@@ -94,8 +94,8 @@ function Navbar() {
                 {navItems}
               </ul>
             </div>
-            <a className=" text-5xl font-bold cursor-pointer  ">Hari's  </a>
-            <a className="text-5xl font-bold text-pink-500">  BookStore</a>
+          <a className=" text-5xl font-bold cursor-pointer  ">Hari's   </a>
+            <a className="text-6xl font-bold text-pink-500">   BookStore</a>
           </div>
           <div className="navbar-end space-x-2">
             <div className="navbar-center hidden lg:flex">

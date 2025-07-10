@@ -21,8 +21,8 @@ function Footer() {
           </a>
 
           {/* YouTube */}
-          <a href="https://youtube.com/temp-link" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition">
-            <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <a href="https://youtube.com/temp-link" target="_blank" rel="noopener noreferrer" className=" hover:scale-110 transition ">
+            <svg className="w-6 h-6 fill-current " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M19.615 3.184C16.011 2.938 7.984 2.938 4.385 3.184 0.488 3.45 0.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zM9 15.999V8l8 4-8 4z"/>
             </svg>
           </a>

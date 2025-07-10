@@ -1,9 +1,11 @@
 import React from "react";
-import banner from "../../public/img2.jpg";
+import banner from "../../public/book3.png"; // Adjust the path as necessary
+
+
 function Banner() {
   return (
     <>
-      <div className=" max-w-screen-3xl container mx-auto md:px-10 px-4 flex flex-col md:flex-row my-20">
+      <div className=" max-w-screen-2xl container mx-auto md:px-20 px-1 flex flex-col md:flex-row my-20 ">
         <div className="w-full order-2 md:order-1 md:w-1/2 mt-12 md:mt-36">
           <div className="space-y-8">
             <h1 className="text-2xl md:text-4xl font-bold">
@@ -13,11 +15,11 @@ function Banner() {
             <p className="text-sm md:text-xl">
             Step into a world where words weave wonders and stories stir souls. Explore our digital library, where each book is a portal to infinite realms of imagination and inspiration.
             </p>
-            <label className="input input-bordered flex items-center gap-2">
+            <label className="input input-bordered flex items-center gap-2 w-full md:w-96">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
-                fill="currentColor"
+                fill="darkgray"
                 className="w-4 h-4 opacity-70"
               >
                 <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
@@ -26,15 +28,32 @@ function Banner() {
               <input type="text" className="grow" placeholder="Email" />
             </label>
           </div>
-          <button className="btn mt-6 btn-secondary">Get Started</button>
+          <button  className="btn mt-3 btn-secondary ">Get Started</button>    
         </div>
         <div className=" order-1 w-full mt-20 md:w-1/2">
-          <img
+          {/* <video
             src={banner}
-            className="md:w-[550px] md:h-[460px] md:ml-12"
-            alt=""
-          />
+            autoPlay
+            loop
+  
+            muted
+           
+        
+            
+
+            
+            className="md:w-[800px] md:h-[300px] md:ml-1"
+
+
+            
+            alt="hand holding a book"
+          /> */}
+          
+          
+          <img src={banner} alt="hand holding a book" className="md:w-[700px] md:h-[500px] md:ml-10" />
+
         </div>
+        
       </div>
     </>
   );
