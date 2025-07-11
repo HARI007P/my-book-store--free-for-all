@@ -25,8 +25,7 @@ Hari's BookStore is a responsive, full-stack web application designed to help bo
 ## 📦 Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/haris-bookstore.git
+
 
 # Install frontend dependencies
 cd frontend
