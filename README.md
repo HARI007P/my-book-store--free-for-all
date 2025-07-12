@@ -2,7 +2,7 @@
 
 # 📚 Hari's BookStore
 
-Hari's BookStore is a responsive, full-stack web application designed to help book lovers browse, donate, and pay for books seamlessly. Built using **React** (Frontend), **Node.js + Express** (Backend), and **MongoDB** (Database), the platform also supports **UPI Payments**, **order verification**, and **SMS/email notifications**.
+Hari's BookStore is a not a bookstore but we gather pre-used books and sale it for Rs 1 rupee across Andhra Pradesh, Telengana, Odisha. it is a responsive, full-stack web application designed to help book lovers browse, donate, and pay for books seamlessly. Built using **React** (Frontend), **Node.js + Express** (Backend), and **MongoDB** (Database).You can donate book mail to donate.hari07@gmail.com or call to +91 7416219267.
 
 ## 🚀 Features
 
