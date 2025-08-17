@@ -1,186 +1,410 @@
 [
+     
+   {
+  "id": 1,
+  "name": "Bhagavad Gita",
+  "price": 1,
+  "donar": "Mr.harry",
+  "bookcode": "HBS001",
+  "category": "Sold Out",
+  "image": "https://imgs.search.brave.com/ZOloSM6qPp9Ciha34_4T5Bx7IUKftP1fR3OaG_9awZM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFQajJONzIteUwu/anBn",
+  "description": "The Bhagavad Gita, one of the most revered texts of Indian philosophy, is a timeless dialogue between Lord Krishna and the warrior prince Arjuna on the battlefield of Kurukshetra. More than just a religious scripture, it is a profound spiritual guide that addresses the eternal questions of life, duty, morality, and the pursuit of truth. Through its eighteen chapters, the Gita explores concepts such as dharma (righteous duty), karma (the law of action and consequence), bhakti (devotion), and jnana (knowledge). It inspires readers to rise above confusion, self-doubt, and despair by embracing wisdom and selfless action. Universally respected, it has influenced philosophers, leaders, and thinkers around the world for centuries. The Gita remains a guiding light for anyone seeking clarity in times of uncertainty and strength in the face of moral dilemmas."
+},
+
     {
-        "id":1,
-        "name":"A Journey Through Time",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdbqrX8lYq9q4nHdIzw8RYuRsGmsHFn6TNerSZScQuuQ&s"
-    },
+    "id": 2,
+    "name": "A Journey Through Time",
+    "price": 1,
+    "donar": "Mr.Rajesh",
+    "bookcode": "HBS002",
+    "category": "Sale",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdbqrX8lYq9q4nHdIzw8RYuRsGmsHFn6TNerSZScQuuQ&s",
+    "description": "An insightful book that explores the mysteries of time, history, and human understanding through science and storytelling. It blends engaging narratives with scientific discoveries, offering readers a fascinating journey through different eras, civilizations, and the evolution of human knowledge. Perfect for those who are curious about both history and the future, it inspires reflection on how time shapes our lives."
+},
     {
-        "id":2,
-        "name":"Stories Beyond the Stars",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmlpjAMiEBCj-wiLaOi2BWiGgI-FuRMYXzxB4NtO3eGA&s"
-    },
+    "id": 3,
+    "name": "MURUGA - The Lord of War",
+    "price": 1,
+    "donar": "Mr.Suresh",
+    "bookcode": "HBS003",
+    "category": "Sale",
+    "image": "https://imgs.search.brave.com/M7fwsq-vowVTP_ASRXAP-0wUHtlHVr9oCNCqgxmH5yg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9nYXJ1/ZGFsaWZlLmluL2Nh/Y2hlL2xhcmdlL3By/b2R1Y3QvODM0NzYv/V0lTRE9NLTMuanBl/Zw",
+    "description": "A spiritual and cultural exploration of Lord Muruga, revered as the God of War and Victory in Hindu tradition. This book delves into his divine legends, symbolism, and significance in guiding devotees towards courage, wisdom, and devotion."
+},
     {
-        "id":3,
-        "name":"Harry Potter and the Cursed Child",
-        "price":1,
-        "category":"Sale",
-        "image":"data:image/jpeg;base64,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"
-    },
+  "id": 4,
+  "name": "Rich Dad Poor Dad",
+  "price": 1,
+  "donar": "Mr.Srinu",
+  "bookcode": "HBS004",
+  "category": "Sale",
+  "image": "https://bookspringindia.in/cdn/shop/products/81BE7eeKzAL._AC_UF1000_1000_QL80_FMwebp_540x.webp?v=1679329477",
+  "description": "Rich Dad Poor Dad by Robert T. Kiyosaki is a personal finance classic that challenges conventional views on money and success. The book contrasts the financial philosophies of the author’s two father figures: his own well-educated but financially struggling father ('Poor Dad') and his best friend’s wealthy, business-savvy father ('Rich Dad'). Through practical lessons and real-life stories, it teaches the importance of financial literacy, investing, building assets, and thinking differently about money. It has inspired millions worldwide to pursue financial independence."
+},
     {
-        "id":4,
-        "name":"The Island House",
-        "price":1,
-        "category":"Sale",
-        "image":"https://imgv2-1-f.scribdassets.com/img/word_document/523677442/original/216x287/cdda028741/1711085911?v=1"
-    },
+    "id": 5,
+    "name": "Deep Work",
+    "price": 1,
+    "donar": "Mr.Hemanth",
+    "bookcode": "HBS005",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/products/61TkOFwquPL._AC_UF1000_1000_QL80_FMwebp_1024x1024@2x.webp?v=1679330796",
+    "description": "Deep Work by Cal Newport is a powerful guide on how to focus without distraction in a world full of interruptions. It emphasizes the importance of cultivating deep, meaningful concentration to achieve extraordinary productivity and success. Newport provides practical strategies to eliminate shallow work and maximize your mental capacity for high-value tasks."
+},
     {
-        "id":5,
-        "name":"Legends of the Forgotten Realm",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-gaDFvVc5wx4SWZZo9VZJVnYPetMRzwn7HZ6XLdqWig&s"
-    },
+    "id": 6,
+    "name": "Mindset",
+    "price": 1,
+    "donar": "Mr.Raju",
+    "bookcode": "HBS006",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/products/mindset_360x.jpg?v=1626259428",
+    "description": "Mindset by Carol S. Dweck explores the power of having a growth mindset versus a fixed mindset. It reveals how our beliefs about our abilities shape our success in education, work, sports, and relationships. The book teaches readers how adopting a growth mindset can unlock potential, inspire resilience, and transform the way we approach challenges."
+},
     {
-        "id":6,
-        "name":"Tales of Love and Loss",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUQRrsvL6L4D0CyRPyqgOWsokSxLwQ-oFLK68E5M489w&s"
-    },
+    "id": 7,
+    "name": "Attitude Is Everything",
+    "price": 1,
+    "donar": "Mr.Nani",
+    "bookcode": "HBS007",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/products/710jnzKlDTL._AC_UF1000_1000_QL80_FMwebp_180x.webp?v=1679329775",
+    "description": "Jeff Keller’s 'Attitude Is Everything' shows how a positive mindset can change your life. The book explains that success is not just about skills, but about attitude, self-belief, and taking action. With practical lessons and motivational stories, it inspires readers to stay positive, overcome challenges, and achieve their goals."
+},
+{
+    "id": 8,
+    "name": "Start With Why",
+    "price": 1,
+    "donar": "Mr.Avinash",
+    "bookcode": "HBS008",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/products/startwithwhy_360x.jpg?v=1626260960",
+    "description": "'Start With Why' by Simon Sinek explores how great leaders and organizations inspire action by focusing on purpose before anything else. Instead of asking 'what' or 'how', they start with 'why'. The book shares real-world examples of leaders who created loyal followers and built lasting success by leading with vision and clarity."
+}
+,
     {
-        "id":7,
-        "name":"Adventures in the Unknown",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ1dsxFa6zyQmTcbC5rTFqLUeahuZg9a6sysP7GS8t5g&s"
-    },
+    "id": 9,
+    "name":"The Intelligent Investor",
+    "price": 1,
+    "donar": "Mr.Naresh",
+    "bookcode": "HBS009",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/products/theintelligentinvestor_1024x1024@2x.png?v=1626262579",
+    "description": "A classic guide to investing by Benjamin Graham, focusing on long-term strategies, value investing, and principles that help investors minimize risk and build wealth steadily."
+},
+{
+    "id": 10,
+    "name":"Love, Theoretically",
+    "price": 1,
+    "donar": "Mr.Avinash",
+    "bookcode": "HBS010",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/files/81BDsUxiG_L._AC_UF1000_1000_QL80_FMwebp_180x.webp?v=1688138085",
+    "description": "A contemporary romance novel by Ali Hazelwood that combines love, humor, and academia, exploring the life of a theoretical physicist who unexpectedly finds herself entangled in a complicated romance."
+},
+{
+    "id": 11,
+    "name":"The Midnight Library",
+    "price": 1,
+    "donar": "Mr.AbhyaRAm",
+    "bookcode": "HBS011",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/products/Bookspring_360x.jpg?v=1645290463",
+    "description": "A thought-provoking novel by Matt Haig about choices, regrets, and parallel lives. It follows Nora Seed as she explores infinite possibilities in a magical library between life and death."
+}
+,
     {
-        "id":8,
-        "name":"Mysteries of the Ancient World",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGR_4U5y1ogisJLcFm9gBnuQqsJmvC-iF3AuDogt9DKg&s"
-    },
+    "id": 12,
+    "name":"Twisted Love",
+    "price": 1,
+    "donar": "Mr.BhargavRam",
+    "bookcode": "HBS012",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/products/71JmNtanZOL._AC_UF1000_1000_QL80_FMwebp_1024x1024@2x.webp?v=1679329712",
+    "description": "A dark romance novel by Ana Huang, part of the Twisted series. It tells the story of a cold, ruthless man and the woman who melts his walls, blending passion, secrets, and emotional intensity."
+},
+{
+    "id": 13,
+    "name":"The Personal MBA",
+    "price": 1,
+    "donar": "Mr.Tarak",
+    "bookcode": "HBS013",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/products/71IWc_F7yeL._AC_UF1000_1000_QL80_FMwebp_180x.webp?v=1679330873",
+    "description": "Written by Josh Kaufman, this book condenses essential business knowledge into simple concepts. It covers marketing, finance, strategy, and productivity—helping readers gain MBA-level insights without formal education."
+},
+{
+    "id": 14,
+    "name":"It Starts With Us",
+    "price": 1,
+    "donar": "Mr.Prabhu",
+    "bookcode": "HBS014",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/products/81FummIc2eL._AC_UF1000_1000_QL80_FMwebp_1024x1024@2x.webp?v=1679328941",
+    "description": "The sequel to Colleen Hoover’s bestselling 'It Ends With Us'. It continues Lily and Atlas’s journey, exploring themes of love, healing, and second chances while overcoming past struggles."
+},
+{
+    "id": 15,
+    "name":"Haunting Adeline",
+    "price": 1,
+    "donar": "Mr.Yuvaraj",
+    "bookcode": "HBS015",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/products/71QSecJ64LL._AC_UF1000_1000_QL80_FMwebp_1024x1024@2x.webp?v=1679329403",
+    "description": "A dark, suspenseful romance by H.D. Carlton. It follows Adeline, a writer who becomes entangled in a dangerous game of obsession, secrets, and forbidden love, blurring the line between fear and desire."
+},
     {
-        "id":9,
-        "name":"A Stranger In The Family",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0PxyWMrxtER_51sYcOttvnA2-bmx4BoA5hoH-3J3xijwB7NyDbsh4GPxARbfBFDqzYkk&usqp=CAU"
-    },
+    "id": 16,
+    "name":"Elon Musk",
+    "price": 1,
+    "donar": "Mr.Uma Mahesh",
+    "bookcode": "HBS016",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/products/elonmusk_1024x1024@2x.png?v=1626257251",
+    "description": "A biography by Ashlee Vance that explores the extraordinary life of Elon Musk, covering his ventures in Tesla, SpaceX, and SolarCity, and his mission to push the boundaries of technology and innovation."
+},
+{
+    "id": 17,
+    "name":"Love and Other Words",
+    "price": 1,
+    "donar": "Mr.Revanth",
+    "bookcode": "HBS017",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/products/Loveandotherwords_BooksTech_1080x_b219768a-337f-4384-827d-1427cf0803d3_1024x1024@2x.jpg?v=1681885611",
+    "description": "A touching romance novel by Christina Lauren about childhood friends turned lovers, exploring themes of love, loss, and second chances through a dual-timeline narrative."
+},
+{
+    "id": 18,
+    "name":"Things We Never Got Over",
+    "price": 1,
+    "donar": "Mr.Praneeth",
+    "bookcode": "HBS018",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/products/619qA4KTwcL._AC_UF1000_1000_QL80_FMwebp_1024x1024@2x.webp?v=1679332806",
+    "description": "A small-town romance by Lucy Score, featuring a runaway bride, a grumpy hero, and a story full of drama, healing, and unexpected love."
+},
+{
+    "id": 19,
+    "name":"The Boys In The Boat",
+    "price": 1,
+    "donar": "Mr.Srinu",
+    "bookcode": "HBS019",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/files/81gk2vbFLvL._AC_UF1000_1000_QL80_FMwebp_1024x1024@2x.webp?v=1704405963",
+    "description": "Daniel James Brown’s inspiring true story of the American rowing team that triumphed at the 1936 Berlin Olympics, showcasing resilience, teamwork, and the pursuit of excellence."
+},
+{
+    "id": 20,
+    "name":"The Happiest Man on Earth",
+    "price": 1,
+    "donar": "Mr.Rajesh",
+    "bookcode": "HBS020",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/files/819yNwOnMUL._AC_UF1000_1000_QL80_FMwebp_1024x1024@2x.webp?v=1694371173",
+    "description": "Holocaust survivor Eddie Jaku shares his incredible life story, teaching lessons of hope, kindness, and resilience while proving that happiness can be found even in the darkest times."
+},
     {
-        "id":10,
-        "name":"Secrets Of Our House",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV0CMfti8wWgt8egeB3nhEpdvaCE_W5PSUD5nmzvx422fooI272jY0xCU4YXqUZDjClJo&usqp=CAU"
-    },
+    "id": 21,
+    "name":"The Automatic Millionaire",
+    "price": 1,
+    "donar": "Mr.Hari",
+    "bookcode": "HBS021",
+    "category": "Sale",
+    "image": "https://bookspringindia.in/cdn/shop/files/81_Euu67GXL._AC_UF1000_1000_QL80_FMwebp_1024x1024@2x.webp?v=1701717863",
+    "description": "David Bach’s bestselling personal finance book reveals how ordinary people can achieve financial freedom by automating savings and investments. It introduces the 'Latte Factor,' demonstrating how small daily expenses can grow into significant wealth when invested wisely. With practical strategies, Bach shows readers how to pay themselves first, secure their future, and build wealth effortlessly over time."
+},
+{
+    "id": 22,
+    "name":"The Will of the Many",
+    "price": 1,
+    "donar": "Mr.Avinash",
+    "bookcode": "HBS022",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1670363463i/58416952.jpg",
+    "description": "James Islington’s epic fantasy introduces readers to a world ruled by the Hierarchy, where obedience is enforced through mystical powers. The story follows Vis, a student caught between survival and rebellion, as he navigates dangerous politics, hidden agendas, and ancient mysteries. With intricate world-building and powerful themes of loyalty and resistance, it’s the first in a thrilling new series."
+},
+{
+    "id": 23,
+    "name":"Empire of Silence",
+    "price": 1,
+    "donar": "Mr.Karthik",
+    "bookcode": "HBS023",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1523897945i/36454667.jpg",
+    "description": "Christopher Ruocchio’s science fantasy epic follows Hadrian Marlowe, a man destined to destroy a sun and wipe out an alien race. Told in a reflective narrative, the novel blends space opera and high fantasy as Hadrian recounts his life of rebellion, exile, and unintended greatness. Rich in politics, philosophy, and interstellar intrigue, it’s a tale of destiny, sacrifice, and power."
+},
+{
+    "id": 24,
+    "name":"The Hunger of the Gods",
+    "price": 1,
+    "donar": "Mr.Seetharam",
+    "bookcode": "HBS024",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1639404608i/57341045.jpg",
+    "description": "John Gwynne’s second book in the 'Bloodsworn Saga' continues the Norse-inspired epic where gods walk the earth and vengeance fuels battles. The story follows Orka, Varg, and Elvar as their paths intertwine amid war, betrayal, and divine wrath. Packed with visceral combat, emotional stakes, and a richly woven world, it’s a brutal yet deeply human fantasy about family, loyalty, and survival."
+},
+{
+    "id": 25,
+    "name":"Of Blood and Fire",
+    "price": 1,
+    "donar": "Mr.Akash",
+    "bookcode": "HBS025",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1611043983i/56750401.jpg",
+    "description": "Ryan Cahill’s debut fantasy novel begins 'The Bound and the Broken' series with a tale of prophecy, ancient powers, and reluctant heroes. In a land where dragons and magic were thought long gone, a young man discovers his destiny during an invasion that changes his world. Epic in scope and fast-paced in action, it’s a story of courage, friendship, and the rebirth of legends."
+},
     {
-        "id":11,
-        "name":"The Young Elites",
-        "price":1,
-        "category":"Sale",
-        "image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1407318399i/20821111._UX160_.jpg"
-    },
+    "id": 26,
+    "name":"Animals Make Us Human",
+    "price": 1,
+    "donar": "Mr.Ramesh",
+    "bookcode": "HBS026",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348264535i/4386485.jpg",
+    "description": "Temple Grandin explores how animals think, feel, and behave, offering insights into creating better environments for pets, farm animals, and wildlife. Drawing on her expertise in animal science and her personal perspective as someone with autism, Grandin explains how to ensure animals live healthier, happier lives. It’s both a guide for animal lovers and a powerful reflection on empathy and care."
+},
+{
+    "id": 27,
+    "name":"Shutter Island",
+    "price": 1,
+    "donar": "Mr.Rajesh",
+    "bookcode": "HBS027",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1329269081i/21686.jpg",
+    "description": "Dennis Lehane’s psychological thriller follows U.S. Marshal Teddy Daniels as he investigates the disappearance of a patient from Ashecliffe Hospital, a psychiatric facility on Shutter Island. As Teddy delves deeper, shocking secrets and mind-bending twists unravel, blurring the line between reality and delusion. Dark, atmospheric, and suspenseful, the story keeps readers questioning until the final page."
+},
+{
+    "id": 28,
+    "name":"No Exit",
+    "price": 1,
+    "donar": "Mr.Vikram",
+    "bookcode": "HBS028",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1498539883i/35522836.jpg",
+    "description": "Taylor Adams delivers a tense, claustrophobic thriller set in a snowbound rest stop where college student Darby Thorne discovers a kidnapped child locked in a van. Trapped with strangers—one of whom is the kidnapper—Darby must outwit and outlast her opponent in a desperate fight for survival. Fast-paced and chilling, the novel is filled with shocking twists and relentless suspense."
+},
+{
+    "id": 29,
+    "name":"The Elephant Tree",
+    "price": 1,
+    "donar": "Mr.Raghu",
+    "bookcode": "HBS029",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327248026i/9293020.jpg",
+    "description": "Mark Fallon is an overworked detective investigating a spate of attacks at a string of high profile city centre nightclubs. Scott is a dejected 24 year old struggling to make ends meet working for his brother and supplementing his income with a small-scale drug dealing operation. Angela is an attractive 23 year old, raised by her father, a career criminal and small time drug dealer who supplies Scott with cannabis. This is a chilling tale spanning a few months in the lives of Scott and Angela, where realizations about the present combine with shocking revelations from the past leading to an apocalyptic climax where they no longer know whom they can trust."
+},
+{
+    "id": 30,
+    "name":"Never Lie",
+    "price": 1,
+    "donar": "Mr.Sumanth",
+    "bookcode": "HBS030",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1661428846i/62080187.jpg",
+    "description": "Freida McFadden’s twisty psychological thriller follows newlyweds Tricia and Ethan, who get stranded at a remote estate once owned by a famous psychiatrist. As a snowstorm traps them inside, they discover chilling secrets hidden within the mansion’s walls. With lies, betrayal, and shocking revelations, the novel keeps readers on edge until its jaw-dropping finale."
+},
     {
-        "id":12,
-        "name":"The Bones Of Paris",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtkDdxXyH80Vwn4gYK5DCDnq3MvF9l6iCA8U9CXGghcB_MptzHfXcdqYXXK2PeruBMQ_0&usqp=CAU"
-    },
+    "id": 31,
+    "name":"Love, Mom",
+    "price": 1,
+    "donar": "Mr.Mani",
+    "bookcode": "HBS031",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1729890029i/220838350.jpg",
+    "description": "A moving collection of heartfelt letters and reflections written by mothers to their children. 'Love, Mom' captures the joys, fears, wisdom, and unconditional love that define motherhood. Each story is deeply personal, offering readers comfort, inspiration, and a reminder of the powerful bond between mothers and children."
+},
+{
+    "id": 32,
+    "name":"The Crash",
+    "price": 1,
+    "donar": "Mr.Santosh",
+    "bookcode": "HBS032",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1720712855i/216223604.jpg",
+    "description": "A gripping contemporary thriller that explores the aftermath of a devastating plane crash. As survivors grapple with trauma, guilt, and shocking revelations, hidden truths come to light that change everything they thought they knew. 'The Crash' is a tense and emotional page-turner about resilience, survival, and the fragility of life."
+},
+{
+    "id": 33,
+    "name":"The White Tiger",
+    "price": 1,
+    "donar": "Mr.Karthik",
+    "bookcode": "HBS033",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1710937569i/1768603.jpg",
+    "description": "Aravind Adiga’s Man Booker Prize–winning novel follows Balram Halwai, a poor villager who becomes a successful entrepreneur in modern India. Told in a darkly comic and brutally honest voice, the novel exposes corruption, class struggles, and the harsh realities of India’s economic divide. Both satirical and thought-provoking, it’s a tale of ambition and survival."
+},
+{
+    "id": 34,
+    "name":"The Palace of Illusions",
+    "price": 1,
+    "donar": "Mr.Akash",
+    "bookcode": "HBS034",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1679444666i/1774836.jpg",
+    "description": "Chitra Banerjee Divakaruni reimagines the Indian epic Mahabharata from the perspective of Draupadi, the fiery and complex heroine. Narrated in her voice, the novel explores love, duty, destiny, and power while shining light on the struggles and desires of women often left out of history. A lyrical and empowering retelling of an ancient tale."
+},
+{
+    "id": 35,
+    "name":"Sita: Warrior of Mithila",
+    "price": 1,
+    "donar": "Mr.Bhanu",
+    "bookcode": "HBS035",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1493895603i/34680719.jpg",
+    "description": "Amish Tripathi presents a bold retelling of Sita’s story, portraying her not just as a symbol of virtue but as a fierce warrior and leader. This second book in the Ram Chandra series combines mythology, fantasy, and philosophy, reimagining the Ramayana with Sita as its central, powerful figure. A thrilling and inspirational epic."
+},
     {
-        "id":13,
-        "name":"The Good House",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4QUyh5HTW8VqZ2AeR1IM9EpFQLM071foefMfRi6KBEGR_lXL2jVtOx2WRjT-L6oWv1ug&usqp=CAU"
-    },
-    {
-        "id":14,
-        "name":"The Last Legacy",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVFWWZ-iYLBVQEP2ab80O8C3WC7BWytmKNBOM7jZ6514ZMSpCl74sjp8NefW0v6g1XzMs&usqp=CAU"
-    },
-    {
-        "id":15,
-        "name":"The Ever Burning Light",
-        "price":1,
-        "category":"sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqFcWCYOp3jA9l26jPRzIuHDn54NHy4nDFOF5UttmsZoD5c_zaBVkGjf7ECOUh52-kv-4&usqp=CAU"
-    },
-    {
-        "id":16,
-        "name":"The Dead House",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkygNczAQ2NyTG1y51XgaNLz5q-cngHclTQ4lRAtC9ggYcX2WFXJW6E8z7BRLjHLKycBY&usqp=CAU"
-    },
+    "id": 36,
+    "name":"Chanakya's Chant",
+    "price": 1,
+    "donar": "Mr.Srinu",
+    "bookcode": "HBS036",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327939570i/10098912.jpg",
+    "description": "Ashwin Sanghi masterfully blends history and modern politics in this gripping novel. Moving between ancient India, where Chanakya rises as a master strategist, and the present day, where a political genius uses his principles to shape power, the story highlights intrigue, ambition, and the timeless relevance of Chanakya’s wisdom."
+},
+{
+    "id": 37,
+    "name":"The 3 Mistakes of My Life",
+    "price": 1,
+    "donar": "Mr.Hemanth",
+    "bookcode": "HBS037",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1216107646i/3320520.jpg",
+    "description": "Chetan Bhagat’s bestselling novel follows three friends in Ahmedabad chasing their dreams of business, love, and cricket. Through their journey, they encounter ambition, heartbreak, politics, and tragedy. A tale of friendship, aspirations, and the mistakes that shape destiny, it resonates deeply with India’s youth."
+},
+{
+    "id": 38,
+    "name":"Wings of Fire",
+    "price": 1,
+    "donar": "Mr.Hari",
+    "bookcode": "HBS038",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1588286863i/634583.jpg",
+    "description": "An inspiring autobiography of Dr. A.P.J. Abdul Kalam, India’s Missile Man and former President. The book traces his journey from humble beginnings in Rameswaram to becoming a leading scientist and visionary leader. Filled with life lessons, resilience, and determination, it is a story of how dreams can be turned into reality."
+},
+{
+    "id": 39,
+    "name":"Einstein: His Life and Universe",
+    "price": 1,
+    "donar": "Mr.Avinash",
+    "bookcode": "HBS039",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1328011405i/10884.jpg",
+    "description": "Walter Isaacson’s definitive biography of Albert Einstein offers a fascinating portrait of the genius who reshaped our understanding of the universe. Based on newly released personal letters, the book explores both his scientific brilliance and his complex personal life, revealing the humanity behind the legend."
+},
+{
+    "id": 40,
+    "name":"The Audacity of Hope",
+    "price": 1,
+    "donar": "Mr.Rajesh",
+    "bookcode": "HBS040",
+    "category": "Sale",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1386925614i/9742.jpg",
+    "description": "Written by Barack Obama before his presidency, this book offers his vision for America’s future. Blending personal anecdotes with political philosophy, Obama discusses values, democracy, and the challenges facing the nation. 'The Audacity of Hope' is both thoughtful and inspiring, reflecting the optimism and ideals that defined his leadership."
+}
+
     
-    {
-        "id":18,
-        "name":"A Flicker In The Dark",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs2FS5Pjn2n33iA46UywimhtaMuqsY3hJ1sEKrFrrYRg&s"
-    },
-    {
-        "id":19,
-        "name":"Horrors Of The Night 5",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgRkjVn13QAo1OLI64eMsFTRjArgfZrCjkBuiGpMjJZXD2TzOhSos283UNJTHuWyNwjAU&usqp=CAU"
-    },
-    {
-        "id":20,
-        "name":"Haunted Nights",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH7LzPAZGCSdJxDZNqBjtjAqQa6KSprOoCKx6YghB1-T23vDQ4LYCmrZdWUxF0bR6v6Wo&usqp=CAU"
-    },
-    {
-        "id":21,
-        "name":"Fright Night",
-        "price":1,
-        "category":"Sale",
-        "image":"https://i.ebayimg.com/thumbs/images/g/zg8AAOSwKXxlBWWN/s-l225.jpg"
-    },
-    {
-        "id":22,
-        "name":"The Midnight Club",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtTs3ROUGFgur5mUhT9YRFmHgNaUORrVEfp2JADzyutWVSejcBR83zn12LfTed2doQ6O8&usqp=CAU"
-    },
-    {
-        "id":23,
-        "name":"When No One Is Watching",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2tS-pORdhSbtYifTFt-nczWUPn1CpxiBpTBrU0ieZVwjG7PfOCSjbYVdGXfsRH9vB0tA&usqp=CAU"
-    },
-    {
-        "id":24,
-        "name":"Insearch of Lost Home",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYdbJsMqin9XOM7r494yilJ0oggp6MuwujbvRWuUJnQu-2EozOB4OH8Qo19aFtUvDnfvo&usqp=CAU"
-    },
-    {
-        "id":25,
-        "name":"A Man Down Stairs",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgJai0wh3SB7kOWYJYtuSHCtb6XxI3lyVi-ZaMViM9tcAQykTHQdjXE37o5WoeUT_-3So&usqp=CAU"
-    },
-   
-    {
-        "id":27,
-        "name":"The Ghosts Of LaurelFords",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVzF1K73DB_CR0Xl6vOY4wKD-W3ThpXJAU5hVsJUFxfg&s"
-    },
-    {
-        "id":28,
-        "name":"The Last HomeComing",
-        "price":1,
-        "category":"Sale",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfw2IkjevuDtHsVVCpWwBK_iDTHvFeo7Wc_bDdTWe7QGhrX6HoEg3LIlarZvAGgkYCDjY&usqp=CAU"
-    }
+    
+
 ]

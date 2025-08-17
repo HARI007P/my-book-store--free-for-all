@@ -1,66 +1,90 @@
-import React from 'react'
+import React from "react";
 import list from "../../public/list";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Cards from './Cards';
-
+import Cards from "./Cards";
+import { Link } from "react-router-dom";
 
 function Freebook() {
-
-  var settings = {
-    dots: true,
-    infinite: false,
-    speed: 100,
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1280, // Large screens (lg, xl)
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
+          slidesToScroll: 2,
+          infinite: false,
+          dots: true,
+        },
       },
       {
-        breakpoint: 600,
+        breakpoint: 1024, // Medium screens
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
+          slidesToScroll: 1,
+        },
       },
       {
-        breakpoint: 480,
+        breakpoint: 768, // Tablets
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480, // Mobile
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
-  const filterData = list.filter((data) =>data.category === "Sale");
+
+  const filterData = list.filter(
+    (data) => data.category === "Sale" || data.category === "Sold Out"
+  );
+
   return (
-    <>
-    <div className='max-w-screen-2xl  container mx-auto md:px-20 '>
-      <div>
-        <h1 className='font-bold text-pink-500 text-2xl pb-2'>Rs 1 Books</h1>
-        <p className="text-xl">Explore worlds unknown, unravel mysteries, and broaden your horizons, all at no cost. Dive into the endless possibilities awaiting within the pages of our carefully curated free books collection.</p>
+    <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-20 py-16">
+      {/* Title Section */}
+      <div className="mb-10 text-center md:text-left">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-pink-600 mb-3">
+          Rs 1 Books
+        </h1>
+       <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-2xl mx-auto md:mx-0">
+  Discover inspiring stories, timeless knowledge, and life-changing lessons —
+  all starting at just ₹1. At HariBookStore, every book is a gateway to learning,
+  growth, and imagination.
+</p>
+
       </div>
-      <br></br>
-    <div>
-    <Slider {...settings}>
-      {filterData.map((item) =>(
-        <Cards item = {item} key = {item.id}/>
-      ))}
+
+      {/* Slider */}
+      <Slider {...settings} className="mb-10">
+        {filterData.map((item) => (
+          <Cards item={item} key={item.id} />
+        ))}
       </Slider>
+
+      {/* View All Button */}
+      <div className="flex justify-center mt-10">
+        <Link
+          to="/course"
+          className="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-6 rounded-full transition duration-300"
+        >
+          View All
+        </Link>
+      </div>
     </div>
-    </div>
-    </>
-  )
+  );
 }
 
-export default Freebook
+export default Freebook;
