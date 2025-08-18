@@ -38,16 +38,23 @@ app.use("/api/otp", otpRoutes);
 
 // Default route
 app.get("/", (req, res) => {
-  res.send("📚 HariBookStore API with OTP verification");
+  res.send("📚 HariBookStore API is running");
 });
 
 // Config
 const PORT = process.env.PORT || 4000;
 const MONGO_URI = process.env.MONGO_URI;
 
+// MongoDB connection options
+const mongooseOptions = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  serverSelectionTimeoutMS: 5000, // optional: timeout after 5s
+};
+
 // Connect to MongoDB Atlas
 mongoose
-  .connect(MONGO_URI)
+  .connect(MONGO_URI, mongooseOptions)
   .then(() => {
     console.log("✅ MongoDB Atlas connected successfully");
     app.listen(PORT, () => {
@@ -56,4 +63,19 @@ mongoose
   })
   .catch((err) => {
     console.error("❌ MongoDB connection failed:", err.message);
+    process.exit(1); // stop the app if DB connection fails
   });
+
+// Handle unhandled promise rejections
+process.on("unhandledRejection", (err) => {
+  console.error("Unhandled Rejection:", err);
+  process.exit(1);
+});
+
+// Optional: Graceful shutdown
+process.on("SIGINT", () => {
+  mongoose.connection.close(() => {
+    console.log("MongoDB connection closed due to app termination");
+    process.exit(0);
+  });
+});
