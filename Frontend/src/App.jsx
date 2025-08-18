@@ -1,24 +1,25 @@
 import React from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
+
 import Home from "./home/Home";
-import { Navigate, Route, Routes } from "react-router-dom";
 import Courses from "./courses/Courses";
 import Signup from "./components/Signup";
-import { Toaster } from "react-hot-toast";
-import { useAuth } from "./context/AuthProvider";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Payment from "./components/Payment";
 import PrivacyPolicy from "./components/Policy";
 import TermsAndConditions from "./components/TermsAndConditions";
 
-import Background from "./assets/book10.jpg"; // Make sure this path is correct
+import { useAuth } from "./context/AuthProvider";
+import Background from "./assets/book10.jpg"; // Ensure this path is correct
 
 function App() {
-  const [authUser, setAuthUser] = useAuth();
+  const [authUser] = useAuth(); // Only need the user value
 
   return (
     <div
-      className="relative min-h-screen bg-fixed bg-center bg-cover text-gray-200 dark:text-white"
+      className="relative min-h-screen text-gray-200 dark:text-white"
       style={{
         backgroundImage: `url(${Background})`,
         backgroundRepeat: "no-repeat",
@@ -34,15 +35,27 @@ function App() {
       <div className="relative z-10">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/course" element={authUser ? <Courses /> : <Navigate to="/signup" />} />
+
+          {/* Protected Route for Courses */}
+          <Route
+            path="/course"
+            element={authUser ? <Courses /> : <Navigate to="/signup" replace />}
+          />
+
+          {/* Public Routes */}
           <Route path="/signup" element={<Signup />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsAndConditions />} />
+
+          {/* Fallback Route */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
-        <Toaster />
+
+        {/* Global Toast Notifications */}
+        <Toaster position="top-right" reverseOrder={false} />
       </div>
     </div>
   );
