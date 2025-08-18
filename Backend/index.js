@@ -36,21 +36,22 @@ app.use("/api/user", userRoutes);
 app.use("/api/payment", paymentRoutes);
 app.use("/api/otp", otpRoutes);
 
+// Default route
 app.get("/", (req, res) => {
   res.send("📚 HariBookStore API with OTP verification");
 });
 
 // Config
 const PORT = process.env.PORT || 4000;
-const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/haribookstore";
+const MONGO_URI = process.env.MONGO_URI;
 
-// Connect to MongoDB
+// Connect to MongoDB Atlas
 mongoose
   .connect(MONGO_URI)
   .then(() => {
-    console.log("✅ MongoDB connected");
+    console.log("✅ MongoDB Atlas connected successfully");
     app.listen(PORT, () => {
-      console.log(`🚀 Server running on http://localhost:${PORT}`);
+      console.log(`🚀 Server running on port ${PORT}`);
     });
   })
   .catch((err) => {
