@@ -6,19 +6,11 @@ function Footer() {
       <hr className="border-gray-700" />
 
       <div className="container mx-auto px-6 py-10 grid gap-10 md:gap-0 md:grid-cols-3">
-        {/* Navigation Links */}
-        <div className="text-center md:text-left space-y-4">
-          <h3 className="text-lg font-semibold text-pink-400">Quick Links</h3>
-          <nav className="flex flex-col space-y-2 text-sm">
-            <a href="/about" className="hover:text-pink-400 transition">About Us</a>
-            <a href="/contact" className="hover:text-pink-400 transition">Contact Us</a>
-            <a href="/privacy" className="hover:text-pink-400 transition">Privacy Policy</a>
-            <a href="/terms" className="hover:text-pink-400 transition">Terms & Conditions</a>
-          </nav>
-        </div>
+     
+       
 
         {/* Contact Info */}
-        <div className="text-center space-y-3">
+        <div className=" space-y-3">
           <h3 className="text-lg font-semibold text-pink-400">Contact</h3>
           <p>📞 <span className="font-semibold">+91 6305219267</span></p>
           <p>
