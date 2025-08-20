@@ -27,7 +27,7 @@ Our mission is to make reading accessible and enjoyable for everyone. Whether yo
 
 ## 💻 Tech Stack
 
-- **Frontend:** React, CSS/Bootstrap, React Router  
+- **Frontend:** React, Tailwind CSS, React Router  
 - **Backend:** Node.js, Express.js  
 - **Database:** MongoDB  
 - **Authentication & Security:** JWT, bcrypt  
